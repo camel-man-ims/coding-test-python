@@ -1,4 +1,4 @@
-n, m = list(map(int, input().split(' ')))
+n, m = map(int, input().split(' '))
 data = list(map(int, input().split(' ')))
 
 result = 0
