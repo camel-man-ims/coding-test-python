@@ -1,4 +1,3 @@
-a = [1,2,3,4,5]
+data = list(map(str,input()))
 
-for i in a:
-    print(i,end=' ')
+print(data)

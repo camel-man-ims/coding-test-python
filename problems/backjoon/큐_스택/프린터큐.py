@@ -21,3 +21,4 @@ for _ in range(test_case):
                 queue_with_index.pop(0)
         else:
             queue_with_index.append(queue.pop(0))
+
