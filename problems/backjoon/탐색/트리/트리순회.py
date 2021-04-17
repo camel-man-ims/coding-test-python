@@ -1,10 +1,11 @@
 # 21.04.16
 
 class Node:
-    def __init__(self,data,left_node,right_node):
+    def __init__(self, data, left_node, right_node):
         self.data = data
         self.left_node = left_node
         self.right_node = right_node
+
 
 def pre_order(node):
     print(node.data, end='')
@@ -13,12 +14,14 @@ def pre_order(node):
     if node.right_node != '.':
         pre_order(tree[node.right_node])
 
+
 def in_order(node):
     if node.left_node != '.':
         in_order(tree[node.left_node])
     print(node.data, end='')
     if node.right_node != '.':
         pre_order(tree[node.right_node])
+
 
 def post_order(node):
     if node.left_node != '.':
@@ -27,13 +30,11 @@ def post_order(node):
         pre_order(tree[node.right_node])
     print(node.data, end='')
 
+
 n = int(input())
-tree=dict()
+tree = dict()
 for i in range(n):
     data, left_node, right_node = input().split()
-    tree[data] = Node(data,left_node,right_node)
+    tree[data] = Node(data, left_node, right_node)
 
 pre_order(tree['A'])
-
-
-

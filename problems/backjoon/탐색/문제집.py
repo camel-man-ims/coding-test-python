@@ -24,14 +24,14 @@ for _ in range(m):
 
 for i in range(1,n+1):
     if in_degree[i]==0:
-        heap.append(i)
+        heapq.heappush(heap,i)
 
 while heap:
-    data = heap.pop(0)
+    data = heapq.heappop(heap)
     result.append(data)
     for y in array[data]:
-        in_degree[y] -= 1
+        in_degree -= 1
         if in_degree[y]==0:
-            heap.append(y)
+            heapq.heappush(heap,y)
 for i in result:
     print(i, end = ' ')
