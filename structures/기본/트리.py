@@ -5,7 +5,6 @@ class Node:
         self.right_node = right_node
 
 arr = dict()
-
 arr[1] = Node(1,2,5)
 arr[2] = Node(2,2,5)
 

@@ -1,8 +1,5 @@
-from collections import deque
+n= 4
 
-# q= deque([1])
-q = deque()
-
-q.append(1)
-
-print(q.popleft())
+j=1
+for i in range(0,10,j):
+    j= i+3

@@ -17,6 +17,7 @@ def bfs(v):
             visited[v]=True
             print(v,end= ' ')
             for e in adj[v]:
+                # 여기서 not visited[e]가 한번 더 안들어가도 되는 것 같다
                 if not visited[e]:
                     q.append(e)
 
