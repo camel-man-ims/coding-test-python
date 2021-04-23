@@ -1,14 +1,5 @@
-import heapq
+i=0
 
-def heap(arr):
-    h = []
-    result = []
+s = 'hello python'
 
-    for data in arr:
-        heapq.heappush(h,-data)
-
-    for i in range(len(h)):
-        result.append(-heapq.heappop(h))
-    return result
-
-print(heap([43,11,1121,32]))
+print(s[-4:-1])
