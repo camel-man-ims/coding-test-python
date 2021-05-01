@@ -1,4 +1,7 @@
+# 21.04.21
+
 from collections import deque
+
 
 def dfs(num):
     print(num,end=' ')
@@ -6,6 +9,7 @@ def dfs(num):
     for val in adj[num]:
         if not visited[val]:
             dfs(val)
+
 
 def bfs(num):
     q = deque([num])

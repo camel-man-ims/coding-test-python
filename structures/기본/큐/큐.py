@@ -9,4 +9,3 @@ print(data)
 data.popleft()
 
 print(data[0])
-
