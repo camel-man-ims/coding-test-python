@@ -1,3 +1,8 @@
-queue = [[1,2],[2,54],[3,16],[4,1]]
+arr = [1,4,2,5,7,9]
 
-print(max(queue,key=lambda x:x[0])[0])
+for i in range(len(arr)-1):
+    for j in range(len(arr)-1):
+        if arr[j]>arr[j+1]:
+            arr[j],arr[j+1]= arr[j+1],arr[j]
+
+print(arr)
