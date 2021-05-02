@@ -1,13 +1,25 @@
-n = 62
+a,b= map(int,input().split(" "))
 
-i=1
-count = 2
-while 3*i*(i+1)+1<=n:
-    count +=1
-    i +=1
+a_arr = []
+b_arr = []
 
-print(count)
-# 1~6 1 6
-# 7~18 2 6+12
-# 19~36 3 6+12+18
+for i in str(a):
+    a_arr.append(i)
 
+for i in str(b):
+    b_arr.append(i)
+
+a_arr.reverse()
+b_arr.reverse()
+
+a_string =""
+b_string = ""
+for i in a_arr:
+    a_string += i
+for i in b_arr:
+    b_string += i
+
+a_int = int(a_string)
+b_int = int(b_string)
+
+print(max(a_int,b_int))
