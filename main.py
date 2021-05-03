@@ -1,25 +1,8 @@
-a,b= map(int,input().split(" "))
+from itertools import permutations
+from itertools import combinations
 
-a_arr = []
-b_arr = []
+number = ["dq","dwq31"]
 
-for i in str(a):
-    a_arr.append(i)
+s = "".join(number)
 
-for i in str(b):
-    b_arr.append(i)
-
-a_arr.reverse()
-b_arr.reverse()
-
-a_string =""
-b_string = ""
-for i in a_arr:
-    a_string += i
-for i in b_arr:
-    b_string += i
-
-a_int = int(a_string)
-b_int = int(b_string)
-
-print(max(a_int,b_int))
+print(s)
