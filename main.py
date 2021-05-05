@@ -1,8 +1,4 @@
-from itertools import permutations
-from itertools import combinations
+arr = [[0 for i in range(4)]  for j in range(3)]
 
-number = ["dq","dwq31"]
-
-s = "".join(number)
-
-print(s)
+for i in arr:
+    print(i)
