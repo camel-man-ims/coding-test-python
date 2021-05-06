@@ -1,4 +1,9 @@
-arr = [[0 for i in range(4)]  for j in range(3)]
+stack = []
 
-for i in arr:
-    print(i)
+if stack:
+    print("1")
+
+stack.append(1)
+
+if stack:
+    print("2")
