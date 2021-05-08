@@ -1,9 +1,6 @@
-stack = []
+arr = [10,20,30,40,50]
+pop = arr.pop(2)
 
-if stack:
-    print("1")
+arr.insert(2,pop)
 
-stack.append(1)
-
-if stack:
-    print("2")
+print(arr)
