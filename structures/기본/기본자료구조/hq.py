@@ -15,6 +15,6 @@ print(heap([123,43,21,1,2,3,5,10]))
 
 # heapq 위에서 동작한다.
 
-# heap =[]
-# heapq.heappop(heap)
-# heapq.heappush(heap,data)
+# 힙 =[]
+# heapq.heappop(힙)
+# heapq.heappush(힙,data)

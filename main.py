@@ -1,10 +1,5 @@
-s = "abcdef"
+s = [10,20,30,40,50]
 
-print(s[-len(s):])
-print(s[::-1])
-
-arr = ['abcd','abc','a','asdfsd','af']
-
-arr.sort(key=len,reverse=True)
-
-print(arr)
+for i,num in enumerate(s):
+    print(i)
+    print(num)
