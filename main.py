@@ -1,8 +1,4 @@
-from collections import deque
-
-queue = deque()
-
-queue.append((1,2))
-queue.append((3,4))
-queue.append((5,6))
-queue.append((7,8))
+for i in range(5):
+    if i==2:
+        i=4
+    print(i)
