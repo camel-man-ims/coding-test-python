@@ -1,3 +1,1 @@
-v = "abcde"
-
-print(v[len(v)-1])
+print(chr(65))
