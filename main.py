@@ -1,1 +1,4 @@
-print(chr(65))
+a = 4/3
+
+if int(a):
+    print(a)
