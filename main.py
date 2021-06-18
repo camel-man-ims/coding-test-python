@@ -1,4 +1,5 @@
-arr = [1,2,3,4,45]
+arr = []
 
-for index,value in enumerate(arr):
-    print(index,value)
+arr.append(input().split())
+
+print(arr)
