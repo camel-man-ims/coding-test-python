@@ -1,5 +1,6 @@
-arr = []
+name = "asdas-dwq89"
 
-arr.append(input().split())
+for i in name:
+    name = name.replace("-","")
 
-print(arr)
+print(name)
