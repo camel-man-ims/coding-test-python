@@ -1,6 +1,3 @@
-name = "asdas-dwq89"
+name = "aA,-"
 
-for i in name:
-    name = name.replace("-","")
-
-print(name)
+print(name[:len(name)-1])
