@@ -1,3 +1,5 @@
-name = "aA,-"
+a = 4
 
-print(name[:len(name)-1])
+b = -a
+
+print(b)
