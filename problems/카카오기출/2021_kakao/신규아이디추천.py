@@ -13,44 +13,58 @@ def solution(new_id):
         if s.isalpha() or s.isdigit() or s == '-' or s == '_' or s == '.':
             changed_id += s
 
+    changed_three = ""
+    # 3-2) 2번 . 이상이면 제거
+    # changed_id 가 변화하므로 len(changed_id) 역시 변화함
+    # for i in range(len(changed_id) - 1):
+    #     if changed_id[i] == '.' and changed_id[i + 1] == '.':
+    #         changed_three = changed_id[:i] + changed_id[i + 1:]
+    #     else:
+    #         changed_three = changed_id
+    index=0
+    while index<len(changed_id):
+        if index != len(changed_id)-1 and changed_id[index]=='.' and changed_id[index+1]=='.':
+            index+=1
+        elif index != len(changed_id)-1 and changed_id[index]=='.' and changed_id[index+1]!='.':
+            changed_three += "."
+            index+=1
+        else:
+            changed_three += changed_id[index]
+            index+=1
+
     # 3번 . 2번이상 제거.  . 맨앞이나 맨 뒤면 제거
     # 3-1) 맨앞이나 맨뒤 . 면 제거
-    if len(changed_id) >= 2:
-        while changed_id[0] == '.' or changed_id[len(changed_id) - 1] == '.':
-            if changed_id[0] == '.' and changed_id[len(changed_id) - 1] == '.':
-                changed_id = changed_id[1:len(changed_id) - 1]
-            elif changed_id[0] == '.':
-                changed_id = changed_id[1:]
-            elif changed_id[len(changed_id) - 1] == '.':
-                changed_id = changed_id[:len(changed_id) - 1]
+    if len(changed_three) >= 2:
+        while changed_three[0] == '.' or changed_three[len(changed_three) - 1] == '.':
+            if changed_three[0] == '.' and changed_three[len(changed_three) - 1] == '.':
+                changed_three = changed_three[1:len(changed_three) - 1]
+            elif changed_three[0] == '.':
+                changed_three = changed_three[1:]
+            elif changed_three[len(changed_three) - 1] == '.':
+                changed_three = changed_three[:len(changed_three) - 1]
 
-    # 3-2) 2번 . 이상이면 제거
-    for i in range(len(changed_id) - 1):
-        if changed_id[i] == '.' and changed_id[i + 1] == '.':
-            changed_id = changed_id[:i] + changed_id[i + 1:]
+    if changed_three == ".":
+        changed_three = ""
 
-    if changed_id == ".":
-        changed_id = ""
+    if changed_three == "":
+        changed_three += "a"
 
-    if changed_id == "":
-        changed_id += "a"
+    if len(changed_three) >= 16:
+        changed_three = changed_three[:15]
 
-    if len(changed_id) >= 16:
-        changed_id = changed_id[:15]
+    while len(changed_three) < 3:
+        changed_three += changed_three[len(changed_three) - 1]
 
-    while len(changed_id) < 3:
-        changed_id += changed_id[len(changed_id) - 1]
+    while changed_three[len(changed_three)-1] == '.':
+        changed_three = changed_three[:len(changed_three)-1]
 
-    while changed_id[len(changed_id)-1] == '.':
-        changed_id = changed_id[:len(changed_id)-1]
-
-    print(changed_id)
-    return changed_id
+    # print(changed_three)
+    return changed_three
 
 
 solution("...!@BaT#*..y.abcdefghijklm.")
 solution("=.=")
 solution("aa")
-solution("a")
+solution("123_.def")
 solution("=weew.q.q")
 solution("bb...")
