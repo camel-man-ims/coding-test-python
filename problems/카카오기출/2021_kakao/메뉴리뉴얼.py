@@ -2,14 +2,10 @@ from itertools import combinations
 
 
 def convert(s):
-    new = ""
+    result = ""
     for x in s:
-        new += x
-    return new
-
-def anagram(s):
-    arr = [0 for _ in range(26)]
-
+        result +=x
+    return result
 
 def solution(orders, course):
     hash_map = dict()
@@ -20,14 +16,23 @@ def solution(orders, course):
             c_arr = list(combinations(order,num))
             for c in c_arr:
                 s_arr.append(convert(c))
+
     for s in s_arr:
-        if s in hash_map:
-            hash_map[s]+=1
+        temp_arr = []
+        for t in s:
+            temp_arr.append(t)
+        temp_arr.sort()
+        sub_s = ""
+
+        for t in temp_arr:
+            sub_s += t
+
+        if sub_s in hash_map:
+            hash_map[sub_s]+=1
         else:
-            hash_map[s]=1
+            hash_map[sub_s]=1
 
     result = []
-    print(hash_map)
 
     for num in course:
         max_value = 0

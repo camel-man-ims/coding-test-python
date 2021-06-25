@@ -1,6 +1,5 @@
-from itertools import combinations
+arr = [1,3,4,2,2,5]
 
-arr = "abc"
+arr.sort()
 
-i = list(combinations(arr, 2))
-print(i)
+print(arr)
