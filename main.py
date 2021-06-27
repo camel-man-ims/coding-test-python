@@ -1,5 +1,4 @@
-arr = [1,3,4,2,2,5]
+number = 34.23212
 
-arr.sort()
+print(round(number,2))
 
-print(arr)
