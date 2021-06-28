@@ -1,5 +1,9 @@
-arr = [1,3,4,2,2,5]
+set_ = set()
 
-arr.sort()
+set_.add(1)
+set_.add(2)
+set_.add(3)
 
-print(arr)
+
+if 4 not in set_:
+    print("hi")
