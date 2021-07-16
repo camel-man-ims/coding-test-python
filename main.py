@@ -1,2 +1,11 @@
-for i in range(0,0):
-    print("hi")
+n= int(input())
+
+arr = []
+
+for _ in range(n):
+    arr.append(int(input()))
+
+arr.sort()
+
+for i in arr:
+    print(i)
