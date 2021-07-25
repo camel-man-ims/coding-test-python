@@ -1,11 +1,12 @@
-n= int(input())
+from collections import deque
 
-arr = []
+arr = deque()
 
-for _ in range(n):
-    arr.append(int(input()))
+arr.append(1)
+arr.append(2)
+arr.append(3)
+arr.append(4)
 
-arr.sort()
-
-for i in arr:
-    print(i)
+while arr:
+    arr.pop()
+    print(arr)

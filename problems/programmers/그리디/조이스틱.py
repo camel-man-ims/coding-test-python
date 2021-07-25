@@ -53,4 +53,4 @@ name4= "AAAAAAABA"
 name5 = "CBC"
 
 
-print(solution(name5))
+print(solution(name3))
