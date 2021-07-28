@@ -20,7 +20,7 @@ while data_arr:
     while temp and temp[-1] < pop_value:
         temp.append(numbers.popleft())
         result.append("+")
-    if temp[-1]==pop_value:
+    if temp and temp[-1]==pop_value:
         temp.pop()
         result.append("-")
     else:
