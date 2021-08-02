@@ -9,6 +9,6 @@ def hanoi(n,start,end):
         return
     hanoi(n-1,start,6-start-end)
     print(start,end)
-    hanoi(n-1,6-end,start,end)
+    hanoi(n-1,6-end-start,end)
 
 hanoi(number,1,3)
