@@ -34,7 +34,7 @@ def solution(s):
                 s_temp += s[j:n]
         else:
             s_temp += str(cnt) + before
-
+        print(s_temp)
         result.append(len(s_temp))
     result.sort()
     return result[0]
