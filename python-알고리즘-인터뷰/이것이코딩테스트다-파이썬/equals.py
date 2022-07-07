@@ -3,7 +3,7 @@
 # https://www.geeksforgeeks.org/difference-between-__eq__-vs-is-vs-in-python/
 # https://stackoverflow.com/questions/10254594/what-makes-a-user-defined-class-unhashable
 
-# id 함수 -> hash 처럼 unique 한 값을 반환
+# id 함수 -> 메모리 상에 위치한 객체의 주소를 반환
 # https://www.w3schools.com/python/ref_func_id.asp
 
 class Car:

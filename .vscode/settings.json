@@ -1,0 +1,6 @@
+{
+    "java.project.sourcePaths": [
+        "python-알고리즘-인터뷰/문자열/그룹애너그램",
+        "python-알고리즘-인터뷰/문자열/가장긴팰린드롬부분문자열"
+    ]
+}
