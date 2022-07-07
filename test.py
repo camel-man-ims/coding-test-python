@@ -1,3 +1,5 @@
-a = "abcd"
+import sys
 
-print(a[0:100])
+sys.stdin=open("input.txt", "rt")
+board = [list(map(int, sys.stdin.readline().split())) for _ in range(9)]
+
