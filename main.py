@@ -1,4 +1,4 @@
-a = "b"
-b = "b"
+a = "a34"
+b = "b12"
 
-print(a)
+print("".join(a).join(b))
