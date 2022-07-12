@@ -26,6 +26,7 @@
 ## 1-2) 문자열 뒤집기
 
 > * [link](https://leetcode.com/problems/reverse-string/)
+> * [폴더이동](./문자열뒤집기/)
 
 ### a. 문제 요약
 
@@ -38,6 +39,7 @@
 ## 1-3) 로그파일 재정렬
 
 > * [link](https://leetcode.com/problems/reorder-data-in-log-files/)
+> * [폴더이동](./로그파일재정렬)
 
 ### a. 문제 요약
 
@@ -53,6 +55,7 @@
 ## 1-4) 그룹 에너그램
 
 > * [link](https://leetcode.com/problems/group-anagrams/)
+> * [폴더이동](./그룹애너그램)
 
 ### a. 문제 요약
 
@@ -90,6 +93,9 @@
     * `counter.most_common(1)[0][0]`
 
 ## 1-6) 가장 긴 팰린드롬 부분 문자열
+
+* [link](https://leetcode.com/problems/longest-palindromic-substring/)
+* [폴더이동](./가장긴팰린드롬부분문자열/)
 
 ### a. 문제 요약
 
