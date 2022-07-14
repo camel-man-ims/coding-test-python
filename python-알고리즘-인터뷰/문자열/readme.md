@@ -132,3 +132,4 @@
   * while 안에서 `left--`, `right ++` 해야한다
 * python
   * max 구할 시 parameter에 여러 값 넘기고, key값만 주면 됨
+  * 함수 안에 다시 함수 선언하면 그대로 사용 가능
