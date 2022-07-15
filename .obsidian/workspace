@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "백준/한국이-그리울땐-서버에-접속하지/readme.md",
+            "file": "백준/readme.md",
             "mode": "preview",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "백준/한국이-그리울땐-서버에-접속하지/readme.md",
+                "file": "백준/readme.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,9 +89,13 @@
   },
   "active": "b46cb721e482ec02",
   "lastOpenFiles": [
-    "백준/한국이-그리울땐-서버에-접속하지/readme.md",
     "백준/readme.md",
+    "백준/문자열집합/readme.md",
+    "백준/서로다른부분문자열의개수/readme.md",
+    "백준/3의배수/readme.md",
+    "백준/한국이-그리울땐-서버에-접속하지/readme.md",
     "readme.md",
+    "백준/서로다른부분문자열의개수/img.png",
     "python-알고리즘-인터뷰/readme.md",
     "python-알고리즘-인터뷰/이것이코딩테스트다-파이썬/readme.md"
   ]
