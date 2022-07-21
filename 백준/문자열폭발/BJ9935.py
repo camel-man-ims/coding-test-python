@@ -6,19 +6,21 @@ sys.stdin = open("input.txt")
 
 iv = input()
 determine = input()
+stack = []
 
-while len(iv) >= len(determine):
-    flag: bool = False
-    tmp: str = ""
-    p: int = 0
-    while p < len(iv):
-        if iv[p:p + len(determine)] == determine:
-            p += len(determine)
-        tmp += iv[p]
-        p += 1
-    iv = tmp
+for i in range(len(iv)):
+    stack.append(iv[i])
 
-if iv:
-    print(iv)
+    if len(stack) >= len(determine):
+        tmp: list = []
+        for _ in range(len(determine)):
+            tmp.append(stack.pop())
+        s: str = "".join(tmp)[::-1]
+        if s != determine:
+            while tmp:
+                stack.append(tmp.pop())
+
+if stack:
+    print("".join(stack))
 else:
     print("FRULA")
